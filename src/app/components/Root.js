@@ -6,20 +6,21 @@ export class Root extends React.Component {
 	render() {
 		return (
 		<div className="wrapper">
-		<div className="aside">
-		</div>
-			<div className="container">
-				<div className="row">
-					<div className="col-xs-10 col-xs-offset-1">
+				
 						<Header />
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-xs-10 col-xs-offset-1">
+				
+				<aside className="aside">
+					<article>best seller list</article>
+				</aside>
+
+				<div className="content-page">
+					<div className="welcome-text">Welcome!!!</div>
 						{this.props.children}
-					</div>
+					
 				</div>
-			</div>
+
+				<footer className="footer-part"></footer>
+
 		</div>
 			)
 	}

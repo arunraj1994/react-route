@@ -4,18 +4,25 @@ import { Router, Route, browserHistory, IndexRoute } from "react-router";
 
 import { Root } from "./components/Root";
 import { Home } from "./components/Home";
-import { User } from "./components/User";
-
+import { MyFavorites } from "./components/MyFavorites";
+import { MyCart } from "./components/MyCart";
+import { Faq } from "./components/Faq";
+import { CustomerCare } from "./components/CustomerCare";
 class App extends React.Component {
 	render() {
 		return (
 			<Router history={ browserHistory }>
 				<Route path={"/"} component={Root}>
 					<IndexRoute component={Home}/>
-					<Route path={"user/:id"} component={User}/>
+					
 					<Route path={"home"} component={Home}/>
+					<Route path={"myfavorites"} component={MyFavorites}/>
+					<Route path={"mycart"} component={MyCart}/>
+					<Route path={"faq"} component={Faq}/>
+					<Route path={"customercare"} component={CustomerCare}/>
+
 				</Route>
-				<Route path={"home-single"} component={Home}/>
+			
 			</Router>
 		);
 	}

@@ -1,11 +1,11 @@
 import React from "react";
 
-export class Home extends React.Component {
+export class CustomerCare extends React.Component {
 	render() {
 		// console.log(this);
 		return (
 			<div>
-				<h3>Home</h3>
+				<h3>CustomerCare</h3>
 				
 			</div>
 		)
